@@ -16,6 +16,70 @@ h6 {
     color: darkgrey;
 }
 
+hr {
+    height: 3px;
+    border: none;
+    background-color: grey;
+}
+
+hr.thin {
+    height: 1px;
+    background-color: grey;
+    border: none;
+    margin-bottom: -5px;
+}
+ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+ul.noindent {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+}
+
+li.cat {
+    font-weight: bold;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+li.title {
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 0px
+}
+
+ul.dash li::before {
+    content: "– ";
+}
+
+ul.spacedlist li{
+padding-top: 10px
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: lightskyblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: lightskyblue;
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -35,70 +99,11 @@ h6 {
     padding-right: 20px;
 }
 
-#side li,
-#side ul,
 #side ul li {
     list-style: outside none none !important;
 }
 
 #side a:visited {
-    color: lightskyblue;
-}
-
-hr {
-    height: 3px;
-    border: none;
-    background-color: grey;
-}
-
-hr.thin {
-    height: 1px;
-    background-color: grey;
-    border: none;
-    margin-bottom: -5px;
-}
-
-ul {
-    padding-left: 10px;
-    list-style-type: none;
-}
-
-
-
-ul.dash li::before {
-    content: "– ";
-}
-
-li {
-    padding-top: 5px;
-    padding-left: 15px;
-}
-
-li.cat {
-    font-weight: bold;
-    padding-top: 7px;
-    padding-left: 5px;
-}
-
-li.title {
-    font-size: larger;
-    font-weight: bold;
-    padding-left: 0px
-}
-
-a {
-    text-decoration: none;
-}
-
-a:link {
-    color: lightskyblue;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:visited {
     color: lightskyblue;
 }
 
@@ -112,6 +117,7 @@ object.codeblock {
     border-radius: 5px;
     font-family: monospace;
 }
+
 @media (orientation: portrait) {
     .main {
         margin-left: 5%;
@@ -119,7 +125,7 @@ object.codeblock {
     }
 
     .side {
-    padding-right: 10px;
+        padding-right: 10px;
         right: 100vw;
         height: 100vh;
         width: 100vw;
@@ -172,5 +178,4 @@ object.codeblock {
     .closeButton:active {
         background-color: rgb(64, 64, 64);
     }
-
 }
